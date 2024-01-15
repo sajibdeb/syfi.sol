@@ -32,8 +32,8 @@ contract SafeYFI is ERC20Interface, SafeMath {
     constructor() public {
         name = "SafeYFI";
         symbol = "SYFI";
-        decimals = 9;
-        _totalSupply = 1000000000000000000000000;
+        decimals = 0;
+        _totalSupply = 10000000;
 
         balances[msg.sender] = _totalSupply;
         emit Transfer(address(0), msg.sender, _totalSupply);
